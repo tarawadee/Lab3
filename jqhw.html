@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Profile Kette</title>
+
+<style>
+
+body {
+  background-color: #FBDDEB;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 5px;
+  text-align: center;
+}
+
+h1 {
+  color: #FE0F7F;
+  text-align: center;
+}
+
+h2 {
+  color: #6C0D39;
+  text-align: center;
+}
+
+p {
+  font-family: verdana;
+  font-size: 20px;
+  color: red;
+}
+#para1 {
+    
+    color: blue;
+}
+
+#para2 {
+    font-size: 30px;
+    color: #090809;
+}
+.center {
+    text-align: center;
+    color: red;
+}
+
+
+</style>
+
+</head>
+<body >
+
+<h1 >Welcome to profile Tarawadee Sarmangkara </h1>
+
+<p >
+	My name is Tarawadee.
+</p>
+
+<p >
+	My nickname is Kette.
+</p>
+
+<p>
+	I am 24 years old.
+</p>
+
+<p>  
+Favorite food
+</p>
+<button id="show">Show</button><br><br>
+<button id="hide">hide</button><br><br>
+
+
+
+<ul id="para1" >
+
+  <li >Green tea</li>
+  <li >Green curry</li>
+  <li >Cake</li>
+  <li >Noodles</li>
+ 
+</ul>  
+
+<center>
+
+<table style="width:100%">
+  <caption id="para2">ประวัติการศึกษา  <button id="table">table</button><br><br></caption>
+
+  <tr>
+    <th>ช่วงชั้นที่เรียน</th>
+    <th>โรงเรียนที่เข้ารับการศึกษา</th>
+  </tr>
+  <tr>
+    <td id="tr1" style="display:none;">อนุบาล</td>
+    <td  id="tr2" style="display:none;">โรงเรียนเซนโยเซฟ</td>
+  </tr>
+  <tr >
+    <td id="tr3" style="display:none;">ประถมต้น</td>
+    <td id="tr4" style="display:none;">โรงเรียนเซนโยเซฟ</td>
+  </tr>
+ <tr >
+    <td id="tr5" style="display:none;">ประถมปลาย</td>
+    <td id="tr6" style="display:none;">โรงเรียนเซนโยเซฟ</td>
+  </tr>
+ <tr >
+    <td id="tr7" style="display:none;">มัธยมต้น</td>
+    <td id="tr8" style="display:none;">โรงเรียนบดินทร์เดชาสิงสิงหเสนี นนทบุรี</td>
+  </tr>
+ <tr>
+    <td id="tr9" style="display:none;">มัธยมปลาย</td>
+    <td id="tr10" style="display:none;">โรงเรียนบดินทร์เดชาสิงสิงหเสนี นนทบุรี</td>
+  </tr>
+</center>
+<h2 >Impressive trips</h2>
+<p style="color:#944E6F;margin-left:30px;" >ทุกคนคงล้วนแล้วแต่จดจำประสบการณ์เมื่อออกเดินทางครั้งแรกได้ไม่มากก็น้อย ไม่ว่าจะเป็นการเดินทางครั้งแรกในชีวิต การไปเยือนจุดหมายใหม่ๆ ครั้งแรก หรือแม้แต่ออกไปลองสัมผัสประสบการณ์แปลกใหม่ครั้งแรก และลองเข้าพักในประเภทที่พักแตกต่างจากเคย</p>
+<center>
+
+<img src="kette.jpg" alt="Workplace" usemap="#workmap" width="400" height="425">
+
+<map name="workmap">
+  <area shape="rect" coords="34,44,270,350" alt="Computer" href="http://google.com">
+  <area shape="rect" coords="290,172,333,250" alt="Phone" href="http://google.com">
+  <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="http://google.com">
+</map>
+</center>
+</table>
+
+
+<h2>Who am I?</h2>
+
+<p>ฉันเป็นคนมีลักษณะนิสัยซื่อสัตย์ กตัญญูต่อผู้มีพระคุณแต่ไมได้เป็นคนดี ใครดีมาดีตอบใครร้ายมาก็ร้ายกลับเช่นกัน 
+เป็นคนรักเกียรติศักดิ์ศรีตัวเอง ขี้เล่นชอบอ้อนเรียกร้องความสนใจเป็นบางเวลาแต่บางครั้งก็ชอบอยู่คนเดียว เพราะรู้สึกว่าการอยู่คนเดียวทำให้เรารู้จักตัวเองมากขึ้น รักความสบายไม่ชอบความลำบาก มีความอ่อนน้อยถ่อมตนกับผู้ใหญ่กว่า</p>
+
+
+
+<button onclick="document.getElementById('myImage').src='kette1.jpg'">ตอนเด็ก</button>
+
+
+
+<button onclick="document.getElementById('myImage').src='kette2.jpg'">ตอนโต</button>
+<br>
+<br>
+
+
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#show").click(function(){
+    $("#para1").show();
+   
+  });
+  $("#hide").click(function(){
+    $("#para1").hide();
+  });
+});
+</script>
+<script>
+$(document).ready(function(){
+  $("#table").click(function(){
+    
+    $("#tr1").fadeIn();
+    $("#tr2").fadeIn("slow");
+    $("#tr3").fadeIn("slow");
+    $("#tr4").fadeIn("slow");
+    $("#tr5").fadeIn("slow");
+    $("#tr6").fadeIn("slow");
+    $("#tr7").fadeIn("slow");
+    $("#tr8").fadeIn("slow");
+    $("#tr9").fadeIn("slow");
+    $("#tr10").fadeIn(3000);
+  });
+  
+});
+</script>
+</html>
